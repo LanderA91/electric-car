@@ -1,0 +1,155 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+header {
+  grid-area: header;
+  background-color: rgb(46, 46, 186);
+  color: white;
+  text-align:center;
+  align-items:baseline;
+  font-size: 20px;
+}
+
+nav {
+     background:  rgb(46, 46, 186);
+     position: sticky;
+     top: 0;
+}
+
+
+.material-icons{
+  height: 20px;
+  width: 20px;
+align-items:baseline;
+display: flex;
+}
+
+
+  
+
+menu {
+	grid-area: menu;
+	background-color: whitesmoke;
+	text-align: center;
+	margin: 10px;
+	display: flex;
+	flex-direction:column;
+	padding: 20px;
+
+}
+
+@media screen and (min-width: 576px) and (max-width:991px) {
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+  "menu menu menu menu"
+  "nav main main main"
+  "nav main main main main"
+  "footer main main main main";
+  grid-template-columns: 15vw auto;
+  max-height: 100vh;
+
+}
+
+
+
+.cards-container {
+  padding: 10px;
+  max-width: 300px;
+  max-height: 500px;
+  margin: 10px;
+
+    
+  }
+}
+
+button{
+  background-color: rgb(46, 46, 186);
+  border-radius: 2px;
+  border-color: rgb(46, 46, 186);
+  color: white;
+ 
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  text-align: center;
+  font-size: 15px;
+  color: black;
+  padding: 2px;
+}
+
+
+.pagination {
+	display: flex;
+	margin: 10px;
+	justify-content: center;
+}
+
+
+.pagination a {
+	color: #021a69;
+	text-decoration-line: none;
+	padding: 8px 16px;
+	border: 1px solid white;
+	float: left;
+}
+
+
+.pagination a:first-child {
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.pagination a:last-child {
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+
+.container {
+  border: 4px solid rgb(46, 46, 186);
+  margin: 10px;
+  padding: 10px;
+}
+
+
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+ 
+  
+
+.h3{
+  text-align: center;
+  font-size: 20px ;
+}
+
+
+aside {
+  grid-area: sidebar;
+  background-color:  rgb(46, 46, 186);
+  text-align: center;
+  color: whitesmoke ;
+  text-decoration-color: white ;
+  flex-direction: column;
+
+}
+
+
+footer {
+  grid-area: footer;
+  background-color: rgb(25, 25, 82);
+  color: whitesmoke;
+  text-align: center;
+align-items: center;
+padding-top: 20px;
+padding-bottom: 10px;
+justify-content: space-between;
+}
